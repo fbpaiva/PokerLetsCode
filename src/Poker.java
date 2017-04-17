@@ -5,10 +5,12 @@ public class Poker {
 	private Carta mesa[] = new Carta[5];
 	
 	public void inserirCartaMesa(Carta carta){
-		//
+		int posicao = mesa.length;
+		mesa[posicao] = carta;
 	}
 	
 	public void inserirCartaJogador(int posicao, Carta carta){
-		//
+		Jogador jogador = jogadores.get(posicao);
+		jogador.inserirCarta(carta);
 	}
 }
