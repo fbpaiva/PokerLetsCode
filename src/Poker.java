@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
 public class Poker {
-	ArrayList<Jogador> jogadores;
+	ArrayList<Jogador> jogadores = new ArrayList();
 	private Carta mesa[] = new Carta[5];
 	
 	public void inserirCartaMesa(Carta carta){
-		int posicao = mesa.length;
+		int posicao = mesa.length-1;
 		mesa[posicao] = carta;
 	}
 	
@@ -17,8 +17,12 @@ public class Poker {
 	public void inserirJogador(Jogador jogador){
 			jogadores.add(jogador);
 	}
-	
+
 	public Jogador getJogador(int posicao){
 		return jogadores.get(posicao);
+	}
+	
+	public Carta[] getMesa(){
+		return mesa;
 	}
 }

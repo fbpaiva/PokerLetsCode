@@ -10,8 +10,8 @@ public class Main {
 		System.out.println("Quantos jogadores?");
 		numeroDeJogadores = scanner.nextInt();
 		
-		for ( int i = 1 ; i<= numeroDeJogadores ; i++){
-			Jogador jogador = new Jogador("Jogador" + i);
+		for ( int i = 0 ; i< numeroDeJogadores ; i++){
+			Jogador jogador = new Jogador("Jogador" + (i+1));
 			poker.inserirJogador(jogador);
 			poker.inserirCartaJogador(i, maco.sortear());
 			poker.inserirCartaJogador(i, maco.sortear());
@@ -27,8 +27,20 @@ public class Main {
 		
 		for(int i = 0; i < numeroDeJogadores; i++){
 			Jogador jogador = poker.getJogador(i);
-			//System.out.println(jogador.getMao());
+			System.out.println(jogador.getNome());
+			
+			Carta[] mao = jogador.getMao();
+			
+			for(int j = 0; j < mao.length; j++){
+				System.out.print(mao[j]);
+			}
+			
 		}
 		
+		Carta[] mesa = poker.getMesa();
+		
+		for(int j = 0; j < mesa.length; j++){
+			System.out.print(mesa[j]);
+		}
 	}
 }
