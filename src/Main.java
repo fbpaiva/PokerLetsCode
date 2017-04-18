@@ -32,15 +32,16 @@ public class Main {
 			Carta[] mao = jogador.getMao();
 			
 			for(int j = 0; j < mao.length; j++){
-				System.out.print(mao[j]);
+				System.out.print(mao[j] + " ");
 			}
-			
+			System.out.println("");
 		}
 		
 		Carta[] mesa = poker.getMesa();
-		
+
+		System.out.println("Mesa");
 		for(int j = 0; j < mesa.length; j++){
-			System.out.print(mesa[j]);
+			System.out.print(mesa[j] + " ");
 		}
 	}
 }

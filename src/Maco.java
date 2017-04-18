@@ -8,7 +8,6 @@ public class Maco {
 	ArrayList<Carta> maco = new ArrayList<>();
 
 	public Maco() {
-
 		for (int i = 0; i < 13; i++) {
 			for (int j = 0; j < 4; j++) {
 				String umValor = valoresDisponiveis[i];
