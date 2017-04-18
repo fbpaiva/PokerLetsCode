@@ -1,8 +1,7 @@
 
 public class Main {
 
-	public static void main(String[] args) {
-	
+	public static void main(String[] args) {	
 		MyScanner scanner = new MyScanner();
 		int numeroDeJogadores = 0;
 		Poker poker = new Poker();
@@ -25,6 +24,5 @@ public class Main {
 			poker.inserirCartaMesa(maco.sortear());
 			poker.inserirCartaMesa(maco.sortear());
 		}
-		
 	}
 }
