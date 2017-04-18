@@ -20,15 +20,13 @@ public class Maco {
 
 	}
 
-
 	public Carta sortear() {
 		Random gerador = new Random();
-		int random = gerador.nextInt(maco.size()-1);
+		int random = gerador.nextInt(maco.size() - 1);
 		return maco.remove(random);
 	}
-	
-	public boolean estaVazio(){
+
+	public boolean estaVazio() {
 		return maco.size() == 0;
 	}
-
 }
