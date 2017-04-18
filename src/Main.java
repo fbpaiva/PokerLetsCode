@@ -24,5 +24,11 @@ public class Main {
 			poker.inserirCartaMesa(maco.sortear());
 			poker.inserirCartaMesa(maco.sortear());
 		}
+		
+		for(int i = 0; i < numeroDeJogadores; i++){
+			Jogador jogador = poker.getJogador(i);
+			//System.out.println(jogador.getMao());
+		}
+		
 	}
 }
