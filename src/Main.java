@@ -18,7 +18,13 @@ public class Main {
 			poker.inserirCartaJogador(i, maco.sortear());
 		}
 		
-		
+		for ( int i = 0 ; i < 5; i++){
+			poker.inserirCartaMesa(maco.sortear());
+			poker.inserirCartaMesa(maco.sortear());
+			poker.inserirCartaMesa(maco.sortear());
+			poker.inserirCartaMesa(maco.sortear());
+			poker.inserirCartaMesa(maco.sortear());
+		}
 		
 	}
 }
