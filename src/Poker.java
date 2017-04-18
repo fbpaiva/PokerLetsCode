@@ -13,4 +13,8 @@ public class Poker {
 		Jogador jogador = jogadores.get(posicao);
 		jogador.inserirCarta(carta);
 	}
+	
+	public void inserirJogador(Jogador jogador){
+			jogadores.add(jogador);
+	}
 }
