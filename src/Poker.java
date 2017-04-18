@@ -17,4 +17,8 @@ public class Poker {
 	public void inserirJogador(Jogador jogador){
 			jogadores.add(jogador);
 	}
+	
+	public Carta[] getMesa(){
+		return mesa;
+	}
 }

@@ -11,7 +11,9 @@ public class Jogador {
 	
     public Jogador (String umNome) {
     	nome = umNome;
-    	
-    	
+    }
+    
+    public Carta[] getMao(){
+    	return jogador;
     }
 }
