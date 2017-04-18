@@ -3,6 +3,10 @@ public class Main {
 
 	public static void main(String[] args) {
 	
-		System.out.println("Poker Class");
+		Maco maco = new Maco();
+		
+		while(! maco.estaVazio() ){
+			System.out.println(maco.sortear());
+		}
 	}
 }
