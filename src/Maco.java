@@ -17,7 +17,7 @@ public class Maco {
 	}
 	
 	public Carta sortear(){
-		return new Carta();
+		return new Carta("1","2");
 	}
 	
 }
